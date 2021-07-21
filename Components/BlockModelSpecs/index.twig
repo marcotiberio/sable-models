@@ -1,0 +1,18 @@
+<div class="flyntComponent" is="flynt-block-model-specs">
+  <div class="container">
+    <ul class="grid">
+      {% for item in items %}
+        {% if item.spec and item.details %}
+          <li class="grid-item">
+            <div class="content">
+              <div class="content-inner">
+                {{ item.spec }}
+                {{ item.details }}
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
