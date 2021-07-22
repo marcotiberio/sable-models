@@ -63,6 +63,8 @@ function getACFLayout()
                 'name' => 'post',
                 'type' => 'relationship',
                 'post_type' => [
+                    'post',
+                    'page',
                     'model',
                     'news'
                 ],

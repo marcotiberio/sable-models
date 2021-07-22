@@ -32,20 +32,6 @@ add_action('Flynt/afterRegisterComponents', function () {
                     'value' => 'post',
                 ],
             ],
-            [
-                [
-                    'param' => 'post_type',
-                    'operator' => '!=',
-                    'value' => 'model',
-                ],
-            ],
-            [
-                [
-                    'param' => 'post_type',
-                    'operator' => '!=',
-                    'value' => 'news',
-                ],
-            ]
         ],
     ]);
 });

@@ -1,0 +1,32 @@
+[is='flynt-block-sticker'] {
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  height: auto;
+  left: 50%;
+  position: fixed;
+  top: 10vw;
+  width: 8vw;
+
+  .container {
+    animation: rotate linear infinite;
+    float: left;
+    position: relative;
+    transition: all 0.666s;
+  
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        animation-delay: -(random(1000) / 100) + s;
+        animation-duration: ((random(800) / 100)+2) + s;
+      }
+    }
+  }
+
+  .figure {
+    margin: 0 auto;
+  }
+}

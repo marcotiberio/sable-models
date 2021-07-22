@@ -2,7 +2,7 @@
   margin: 10vw 20vw;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
-    margin: 10vw;
+    margin: calc(10vw +  1px) 10vw;
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {
@@ -31,12 +31,14 @@
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
+      border: 0;
+      border-top: 1px solid $color-border;
       height: 20vw;
       margin-bottom: 0;
       width: 60vw;
     }
 
-    h3 {
+    h2 {
       text-transform: uppercase;
     }
   }
@@ -46,6 +48,17 @@
     background-color: $color-background;
     border: 1px solid $color-border;
     text-align: inherit;
+    width: 50vw;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      margin-bottom: 10vw;
+      width: 60vw;
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      margin-bottom: 20vw;
+      width: 100vw;
+    }
 
     &--textLeft {
       text-align: left;

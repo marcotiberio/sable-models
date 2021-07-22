@@ -1,18 +1,52 @@
 [is='flynt-slider-images'] {
+  border-bottom: 1px solid $color-text;
+  border-left: 1px solid $color-text;
+  border-top: 1px solid $color-text;
+  width: 50vw;
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    width: 100vw;
+  }
+
+  .preContent {
+    background-color: $color-background;
+    border-bottom: 1px solid $color-text;
+    border-top: 1px solid $color-text;
+    height: 10vw;
+    margin-top: 5vw;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      height: auto;
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      width: 100vw;
+    }
+  }
+
   .slider {
-    max-width: 800px;
+    background-color: $color-background;
+    height: 30vw;
+    margin-left: 0;
     position: relative;
+    width: 50vw;
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      height: 60vw;
+      width: 100vw;
+    }
 
     &-item {
       height: 0;
       overflow: hidden;
       padding-bottom: (2/3) * 100%;
       position: relative;
+      width: 50% !important;
     }
 
     &-button {
       align-items: center;
-      background-color: rgba($color-background-dark, 0.5);
+      background-color: transparent;
       border-radius: 50%;
       cursor: pointer;
       display: flex;
@@ -25,28 +59,21 @@
       width: 40px;
       z-index: 10;
 
-      @media (min-width: $breakpoint-tablet-horizontal) {
-        &:hover,
-        &:focus {
-          background-color: $color-accent;
-        }
-      }
-
       &.swiper-button-disabled {
-        opacity: 0.5;
+        opacity: 0.2;
         pointer-events: none;
       }
 
       &--prev {
-        left: 15px;
+        left: -7.5px;
       }
 
       &--next {
-        right: 15px;
+        right: -7.5px;
       }
 
       .feather {
-        color: $color-background;
+        color: $black;
         height: auto;
         top: 0;
         width: 80%;

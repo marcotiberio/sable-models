@@ -5,13 +5,13 @@ use Flynt\Components;
 
 add_action('Flynt/afterRegisterComponents', function () {
     ACFComposer::registerFieldGroup([
-        'name' => 'postComponents',
-        'title' => 'Post Components',
+        'name' => 'modelComponents',
+        'title' => 'Model Components',
         'style' => 'seamless',
         'fields' => [
             [
                 'name' => 'postComponents',
-                'label' => __('Post Components', 'flynt'),
+                'label' => __('Model Components', 'flynt'),
                 'type' => 'flexible_content',
                 'button_label' => __('Add Component', 'flynt'),
                 'layouts' => [
@@ -32,7 +32,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     'operator' => '==',
                     'value' => 'model',
                 ],
-            ]
+            ],
         ],
     ]);
 });

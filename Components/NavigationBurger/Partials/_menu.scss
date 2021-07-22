@@ -10,12 +10,21 @@
   padding-bottom: 0;
   padding-top: 0;
   position: fixed;
-  top: 10vw;
+  top: 20vw;
   transform: translateX(-100%);
   transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.45s;
   visibility: hidden;
   width: 40vw;
   z-index: 98;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    top: 10vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    height: 80vw;
+    top: 20vw;
+  }
 
   .admin-bar & {
     top: $navigation-height + 46px;

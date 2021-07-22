@@ -1,4 +1,12 @@
 [is='flynt-block-listing-models'] {
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: 0 10vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin: 0 20vw;
+  }
+  
   .preContent {
     display: flex;
     width: 100%;
@@ -14,11 +22,13 @@
     row-gap: 5vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      grid-template-columns: repeat(2, 40vw);
+      column-gap: 20vw;
+      grid-template-columns: repeat(2, 30vw);
       row-gap: 10vw;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
+      column-gap: 20vw;
       grid-template-columns: 1fr;
       row-gap: 20vw;
     }
@@ -34,6 +44,8 @@
 
         &-inner {
           align-items: center;
+          background-color: $color-background;
+          border-left: 1px solid $color-text;
           border-top: 1px solid $color-text;
           display: flex;
           flex-flow: row wrap;
@@ -43,13 +55,13 @@
           @media (max-width: $breakpoint-tablet-horizontal) {
             background-color: $color-background;
             height: 10vw;
-            width: 20vw;
+            width: 30vw;
           }
 
           @media (max-width: $breakpoint-mobile-horizontal) {
             background-color: $color-background;
             height: 20vw;
-            width: 40vw;
+            width: 60vw;
           }
 
           .content-title {

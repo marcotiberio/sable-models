@@ -19,7 +19,10 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockImage\getACFLayout(),
                     Components\BlockImageText\getACFLayout(),
                     Components\BlockListingModels\getACFLayout(),
+                    Components\BlockModelSpecs\getACFLayout(),
                     Components\BlockNewsRepeater\getACFLayout(),
+                    Components\BlockSticker\getACFLayout(),
+                    Components\FormContactForm7\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),
                     Components\BlockWysiwyg\getACFLayout(),
                     Components\GridImageText\getACFLayout(),
@@ -40,11 +43,6 @@ add_action('Flynt/afterRegisterComponents', function () {
                     'param' => 'post_type',
                     'operator' => '!=',
                     'value' => 'model'
-                ],
-                [
-                    'param' => 'post_type',
-                    'operator' => '!=',
-                    'value' => 'news'
                 ]
             ]
         ]

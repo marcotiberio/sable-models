@@ -4,13 +4,17 @@
 * Top level styles every element should inherit.
 */
 
-@include font-face('Roboto', 'Roboto-Thin.woff2', '100', 'normal');
-@include font-face('Roboto', 'Roboto-Light.woff2', '300', 'italic');
-@include font-face('Roboto', 'Roboto-Regular.woff2', '400', 'normal');
-@include font-face('SandroGrottesco', 'SandroGrottesco-Regular.woff2', '400', 'normal');
+@include font-face('Roboto', 'Roboto-Thin', '100', 'normal');
+@include font-face('Roboto', 'Roboto-Light', '300', 'italic');
+@include font-face('Roboto', 'Roboto-Regular', '400', 'normal');
+@include font-face('SandroGrottesco', 'SandroGrottesco-Regular', '400', 'normal');
 
 html {
-  background-color: $color-background;
+  background-attachment: fixed;
+  background-image:
+    linear-gradient(to right, $color-border 1px, transparent 1px),
+    linear-gradient(to bottom, $color-border 1px, transparent 1px);
+  background-size: 10vw 10vw;
   box-sizing: border-box;
   color: $color-text;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -22,6 +26,13 @@ html {
   overflow-wrap: break-word;
   width: 100vw;
   word-wrap: break-word;
+  
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    background-size: 20vw 20vw;
+  }
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    background-size: 20vw 20vw;
+  }
 
 
   *,
@@ -32,18 +43,10 @@ html {
 }
 
 body {
-  background-image:
-    linear-gradient(to right, $color-border 1px, transparent 1px),
-    linear-gradient(to bottom, $color-border 1px, transparent 1px);
-  background-size: 10vw 10vw;
   height: auto;
   min-height: 100vh;
   overflow-x: hidden;
   width: 100vw;
-
-  @media (max-width: $breakpoint-mobile-horizontal) {
-    background-size: 20vw 20vw;
-  }
 }
 
 /**
@@ -69,13 +72,17 @@ body {
 
 h1,
 .h1 {
-  font-size: 2.25rem;
-  line-height: 1.175;
+  font-size: 1.5rem;
+  line-height: 1;
   margin-bottom: 1.5rem;
   padding-top: 2rem;
 
   @media (min-width: $breakpoint-mobile-horizontal) {
-    font-size: 2.75rem;
+    font-size: 2rem;
+  }
+
+  @media (min-width: $breakpoint-tablet-horizontal) {
+    font-size: 3rem;
   }
 }
 
@@ -84,9 +91,10 @@ h2,
   font-size: 1.5rem;
   line-height: 1.25;
   padding-top: 1rem;
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-mobile-horizontal) {
-    font-size: 2.5rem;
+    font-size: 160%;
   }
 }
 
@@ -94,9 +102,10 @@ h3,
 .h3 {
   font-size: 1.125rem;
   padding-top: 1rem;
+  text-transform: uppercase;
 
   @media (min-width: $breakpoint-mobile-horizontal) {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -524,6 +533,25 @@ select {
 
 .mainContent {
   flex: 1 0 auto;
+}
+
+.page-child .mainContent {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 20vw;
+  margin-top: 10vw;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-left: 10vw;
+    margin-top: calc(10vw + 2px);
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 .flyntComponent {
