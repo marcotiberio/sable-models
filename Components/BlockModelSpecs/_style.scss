@@ -1,6 +1,10 @@
 [is='flynt-block-model-specs'] {
   width: 20vw;
 
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: 0 10vw;
+  }
+
   @media (max-width: $breakpoint-mobile-horizontal) {
     border-bottom: 1px solid $color-border;
     border-top: 1px solid $color-border;

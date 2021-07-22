@@ -3,14 +3,14 @@
   backface-visibility: hidden;
   background-color: $color-background;
   border-right: 1px solid $color-border;
-  height: 100vw;
+  height: fit-content;
   left: 0;
   margin: 0;
   overflow-y: auto;
   padding-bottom: 0;
   padding-top: 0;
   position: fixed;
-  top: $navigation-height;
+  top: 10vw;
   transform: translateX(-100%);
   transition: transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), visibility 0.45s;
   visibility: hidden;
@@ -28,6 +28,10 @@
   &-item {
     border-bottom: 1px solid $color-border;
     height: 20vw;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: 10vw;
+    }
 
     .menu-link {
       align-items: center;

@@ -1,5 +1,6 @@
 {
   "Components/NavigationBurger/Assets/logo.svg": "Components/NavigationBurger/Assets/logo-4627cdfa7d.svg",
+  "Components/NavigationMain/Assets/logo.png": "Components/NavigationMain/Assets/logo-25eeae13f5.png",
   "Components/NavigationMain/Assets/logo.svg": "Components/NavigationMain/Assets/logo-4627cdfa7d.svg",
   "Components/PremiumComponents/LICENSE.pdf": "Components/PremiumComponents/LICENSE-6fc9e14349.pdf",
   "Components/PremiumComponents/ListSocial/Assets/facebook.svg": "Components/PremiumComponents/ListSocial/Assets/facebook-59680163b5.svg",
@@ -34,7 +35,8 @@
   "assets/fonts/montserrat-v14-latin-regular.woff2": "assets/fonts/montserrat-v14-latin-regular-bc3aa95dca.woff2",
   "assets/icons/check-circle.svg": "assets/icons/check-circle-98401bcdb9.svg",
   "assets/icons/spinner.svg": "assets/icons/spinner-2e5c842fc5.svg",
-  "assets/main.css": "assets/main-2a1e9c2878.css",
+  "assets/images/logo.png": "assets/images/logo-25eeae13f5.png",
+  "assets/main.css": "assets/main-877e8ca9a6.css",
   "assets/main.js": "assets/main-e5578acf68.js",
   "assets/main.js.LICENSE.txt": "assets/main-957f80e714.js.LICENSE.txt"
 }

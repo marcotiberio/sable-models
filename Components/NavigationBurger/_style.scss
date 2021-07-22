@@ -11,7 +11,7 @@
 
   height: $navigation-height;
 
-  @media (min-width: $breakpoint-tablet-horizontal) {
+  @media (min-width: $breakpoint-desktop) {
     display: none;
   }
 
@@ -21,7 +21,7 @@
     border-bottom: 1px solid $color-border;
     display: flex;
     flex-direction: row-reverse;
-    height: $navigation-height;
+    height: 20vw;
     justify-content: space-between;
     left: 0;
     padding-bottom: 15px;
@@ -31,6 +31,10 @@
     top: 0;
     width: 100%;
     z-index: 99;
+
+    @media (min-width: $breakpoint-tablet) {
+      height: 10vw;
+    }
 
     .admin-bar & {
       top: 46px;

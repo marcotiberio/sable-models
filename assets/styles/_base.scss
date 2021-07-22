@@ -550,13 +550,13 @@ select {
 }
 
 .centerContainerText {
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: $breakpoint-desktop) {
     margin-left: 20vw;
     margin-top: 10vw;
   }
-
-  @media (min-width: $breakpoint-desktop) {
-    margin-left: 20vw;
+  
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-left: 10vw;
     margin-top: 10vw;
   }
 }

@@ -5,7 +5,7 @@
 
   z-index: 1000;
 
-  @media (min-width: $breakpoint-tablet-horizontal) {
+  @media (min-width: $breakpoint-desktop) {
     display: block;
     position: fixed;
   }
@@ -20,19 +20,22 @@
     flex-flow: column wrap;
     height: 100%;
     justify-content: flex-start;
-    padding: 10vw 0 0;
+    padding-top: 15vw;
     width: 10vw;
   }
 
-  // .logo {
-  //   display: block;
-  //   height: 100%;
+  .logo {
+    height: 10vw;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 20vw;
 
-  //   &-image {
-  //     height: 100%;
-  //     width: auto;
-  //   }
-  // }
+    &-image {
+      height: 100%;
+      width: 20vw;
+    }
+  }
 
   .logotype {
     left: 10px;
@@ -92,7 +95,7 @@
     }
 
     &-item:nth-child(odd) {
-      border-bottom: 1px solid $color-border;
+      border-top: 1px solid $color-border;
     }
     
   }

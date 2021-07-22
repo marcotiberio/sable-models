@@ -1,6 +1,10 @@
 [is='flynt-block-wysiwyg'] {
   margin: 10vw 20vw;
 
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: 10vw;
+  }
+
   @media (max-width: $breakpoint-mobile-horizontal) {
     margin: 0;
   }
@@ -19,6 +23,12 @@
     margin-left: 0;
     padding-left: $container-padding-mobile;
     width: 20vw;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      height: 10vw;
+      margin-bottom: 0;
+      width: 40vw;
+    }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
       height: 20vw;

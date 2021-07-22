@@ -1,4 +1,8 @@
 [is='flynt-block-post-header'] {
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: 10vw;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 20vw 1fr;
@@ -15,7 +19,7 @@
       padding-left: $container-padding-mobile;
       text-transform: uppercase;
       width: 20vw;
-
+      
       @media (max-width: $breakpoint-mobile-horizontal) {
         height: auto;
         min-height: 20vw;

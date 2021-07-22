@@ -1,10 +1,12 @@
 <nav is="flynt-navigation-main" class="flyntComponent" aria-label="{{ __("Main", "flynt") }}">
   <div class="wrapper">
     <div class="container">
-      <a class="logo logotype" href="{{ site.link }}">
-        <h1>Sable Models</h1>
-        {# <img class="logo-image" src="{{ logo.src }}" alt="{{ logo.alt }}"> #}
+      <a class="logo" href="{{ site.link }}">
+        <img class="logo-image" src="{{ logo.src }}" alt="{{ logo.alt }}">
       </a>
+      {# <a class="logotype" href="{{ site.link }}">
+        <h1>Sable Models</h1>
+      </a> #}
       {% if menu %}
         <ul class="menu">
           {% for item in menu.items %}
