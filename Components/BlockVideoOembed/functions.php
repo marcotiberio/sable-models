@@ -30,6 +30,11 @@ function getACFLayout()
                 'endpoint' => 0
             ],
             [
+                'label' => __('Title', 'flynt'),
+                'name' => 'title',
+                'type' => 'text'
+            ],
+            [
                 'label' => __('Poster Image', 'flynt'),
                 'name' => 'posterImage',
                 'type' => 'image',

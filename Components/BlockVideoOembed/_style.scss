@@ -1,27 +1,56 @@
 [is='flynt-block-video-oembed'] {
   @import 'Partials/video';
 
-  &.flyntComponent--sizeSmall {
-    .video {
-      max-width: 375px;
+  margin-left: 20vw;
+  margin-top: 10vw;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-bottom: 10vw;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin-bottom: 20vw;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .title {
+    align-items: center;
+    background-color: $color-background;
+    border-bottom: 1px solid $color-border;
+    border-left: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+    display: flex;
+    height: 5vw;
+    justify-content: flex-start;
+    margin-bottom: 5vw;
+    width: 50vw;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      height: 20vw;
+      margin-bottom: 0;
+      padding-left: $container-padding-mobile;
+      width: 80vw;
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      height: 20vw;
+      margin-bottom: 0;
+      padding-left: $container-padding-mobile;
+      width: 100vw;
     }
   }
 
-  &.flyntComponent--sizeMedium {
-    .video {
-      max-width: $content-max-width;
-    }
-  }
+  .container {
+    background-color: $white;
+    border: 1px solid $black;
+    width: 60vw;
 
-  &.flyntComponent--sizeLarge {
-    .video {
-      max-width: 800px;
-    }
-  }
-
-  &.flyntComponent--sizeFull {
-    .figure-caption {
-      margin-left: 0.625rem;
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      height: 60vw;
+      width: 100vw;
     }
   }
 }
