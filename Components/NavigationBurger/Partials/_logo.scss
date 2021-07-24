@@ -20,6 +20,13 @@
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     height: 10vw;
+    width: 50vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    background-color: transparent;
+    height: 10vw;
+    text-align: right;
   }
 
   h1 {

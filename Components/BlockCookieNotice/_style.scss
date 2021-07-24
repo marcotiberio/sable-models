@@ -1,20 +1,70 @@
 [is='flynt-block-cookie-notice'] {
-  bottom: 0;
+  background-color: $color-background;
+  border-top: 1px solid $black;
+  bottom: -10px !important;
   display: none;
-  left: 0;
+  height: 10vw;
+  left: -10px !important;
+  padding: 10px 2%;
   position: fixed;
   right: 0;
   z-index: 999;
 
-  .container {
-    padding-bottom: $container-padding-mobile;
-    padding-top: $container-padding-mobile;
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    height: 25vw;
+    padding: 20px;
   }
 
-  .content {
-    @include reset-content-margins;
-    font-size: 0.8rem;
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    height: 70vw;
+    padding: 20px;
+  }
+
+  .container {
+    align-items: flex-end;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding-bottom: $container-padding-mobile;
+    padding-top: $container-padding-mobile;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      align-items: flex-end;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      padding-bottom: $container-padding-mobile;
+      padding-top: $container-padding-mobile;
+    }
+
+    .content {
+      @include reset-content-margins;
+      font-size: 0.8rem;
+      width: 60vw;
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        width: 90vw;
+      }
+    }
+
+    .button--small {
+      background-color: $color-background;
+      border: 1px solid $black;
+      border-radius: 0;
+      color: $black;
+      width: 10vw;
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        margin-top: $container-padding-mobile;
+        width: 90vw;
+      }
+
+      &:hover {
+        background-color: $black;
+        border-color: $black;
+        color: #fff;
+      }
+    }
   }
 
   &.cookieNotice--isVisible {

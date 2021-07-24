@@ -12,6 +12,22 @@
   top: 10vw;
   width: 8vw;
 
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    height: auto;
+    left: 70vw;
+    position: fixed;
+    top: 10vw;
+    width: 20vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    height: auto;
+    left: 80vw;
+    position: fixed;
+    top: 20vw;
+    width: 20vw;
+  }
+
   .container {
     animation: rotate linear infinite;
     float: left;

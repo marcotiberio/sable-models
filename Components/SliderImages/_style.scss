@@ -1,10 +1,12 @@
 [is='flynt-slider-images'] {
-  border-bottom: 1px solid $color-text;
+  border-bottom: 0;
   border-left: 1px solid $color-text;
   border-top: 1px solid $color-text;
   width: 50vw;
 
   @media (max-width: $breakpoint-mobile-horizontal) {
+    border-bottom: 0;
+    border-left: 0;
     width: 100vw;
   }
 
@@ -12,11 +14,11 @@
     background-color: $color-background;
     border-bottom: 1px solid $color-text;
     border-top: 1px solid $color-text;
-    height: 10vw;
+    height: auto;
     margin-top: 5vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: auto;
+      width: 80vw;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
@@ -26,13 +28,23 @@
 
   .slider {
     background-color: $color-background;
-    height: 30vw;
+    border: 1px solid $color-border;
     margin-left: 0;
+    margin-right: 20vw;
     position: relative;
     width: 50vw;
 
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      height: 40vw;
+      margin-right: 0;
+      padding-left: $container-padding-mobile;
+      width: 60vw;
+    }
+
     @media (max-width: $breakpoint-mobile-horizontal) {
       height: 60vw;
+      margin-right: 0;
+      padding-left: $container-padding-mobile;
       width: 100vw;
     }
 
@@ -41,7 +53,6 @@
       overflow: hidden;
       padding-bottom: (2/3) * 100%;
       position: relative;
-      width: 50% !important;
     }
 
     &-button {
@@ -73,7 +84,7 @@
       }
 
       .feather {
-        color: $black;
+        color: $color-text;
         height: auto;
         top: 0;
         width: 80%;
