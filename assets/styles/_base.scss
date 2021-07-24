@@ -895,9 +895,9 @@ select {
 
     &:hover,
     &:focus {
-      background-color: $color-background-dark;
-      border-color: $color-background-dark;
-      color: $color-background;
+      background-color: $black;
+      border-color: $black;
+      color: $white;
     }
 
     &--ghost {
