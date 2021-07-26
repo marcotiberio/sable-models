@@ -1,7 +1,7 @@
 [is='flynt-slider-images'] {
   border-bottom: 0;
-  border-left: 1px solid $color-text;
-  border-top: 1px solid $color-text;
+  border-left: 0 solid $color-text;
+  border-top: 0 solid $color-text;
   width: 50vw;
 
   @media (max-width: $breakpoint-mobile-horizontal) {
@@ -13,12 +13,12 @@
   .preContent {
     background-color: $color-background;
     border-bottom: 1px solid $color-text;
-    border-top: 1px solid $color-text;
+    border-left: 1px solid $color-text;
     height: auto;
-    margin-top: 5vw;
+    margin-top: 0;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      width: 80vw;
+      width: 60vw;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
@@ -32,13 +32,13 @@
     margin-left: 0;
     margin-right: 20vw;
     position: relative;
-    width: 50vw;
+    width: calc(50vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
       height: 40vw;
       margin-right: 0;
       padding-left: $container-padding-mobile;
-      width: 60vw;
+      width: calc(60vw + 1px);
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {

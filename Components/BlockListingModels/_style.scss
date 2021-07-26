@@ -72,7 +72,8 @@
         }
 
         &-image {
-          height: 15vw;
+          border: 1px solid $black;
+          height: calc(15vw + 1px);
           object-fit: cover;
 
           @media (max-width: $breakpoint-tablet-horizontal) {
