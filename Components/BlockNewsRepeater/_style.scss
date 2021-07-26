@@ -42,7 +42,7 @@
     margin-left: 0;
     margin-right: 20vw;
     position: relative;
-    width: 60vw;
+    width: calc(60vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
       height: 80vw;
@@ -105,8 +105,23 @@
 
     &-image {
       height: 100%;
-      margin: 0 auto;
-      width: auto;
+      margin: 0;
+      object-fit: cover;
+      width: 100%;
+
+      @media (max-width: $breakpoint-tablet-horizontal) {
+        height: 100%;
+        margin: 0;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        height: 100%;
+        margin: 0 auto;
+        object-fit: auto;
+        width: auto;
+      }
     }
 
     &-caption {
