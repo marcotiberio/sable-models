@@ -30,7 +30,7 @@
     width: 20vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: 10vw;
+      height: calc(10vw + 0.5px);
       margin-bottom: 0;
       width: 40vw;
     }
@@ -109,13 +109,14 @@
     text-transform: uppercase;
     width: 100%;
 
-    @media (max-width: $breakpoint-mobile-horizontal) {
+    @media (max-width: $breakpoint-tablet-horizontal) {
       height: auto;
     }
 
     &-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
       width: 100%;
     }
 
