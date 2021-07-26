@@ -19,6 +19,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockModelSpecs\getACFLayout(),
                     Components\BlockNewsRepeater\getACFLayout(),
                     Components\BlockSticker\getACFLayout(),
+                    Components\BlockLandingPage\getACFLayout(),
                     Components\FormContactForm7\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),
                     Components\BlockWysiwyg\getACFLayout(),

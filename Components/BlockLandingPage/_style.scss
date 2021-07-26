@@ -1,0 +1,50 @@
+[is='flynt-block-landing-page'] {
+  height: 100vh;
+  margin: 10vw 0;
+  width: 100vw;
+  z-index: 1000;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: -10vw 0 0;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin: 0;
+  }
+
+  .content {
+    @include reset-content-margins;
+    background-color: $color-background;
+    border: 1px solid $color-border;
+    height: 100vh;
+    padding-left: 30vw;
+    padding-top: 10vw;
+    text-align: inherit;
+    width: 100vw;
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      margin-bottom: 0;
+      padding-left: 5vw;
+      padding-top: 10vw;
+      width: 50vw;
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      margin-bottom: 20vw;
+      width: 100vw;
+    }
+
+    &--textLeft {
+      text-align: left;
+    }
+
+    &--textCenter {
+      text-align: center;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
