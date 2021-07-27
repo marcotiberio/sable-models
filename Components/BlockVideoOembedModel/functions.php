@@ -1,11 +1,11 @@
 <?php
 
-namespace Flynt\Components\BlockVideoOembed;
+namespace Flynt\Components\BlockVideoOembedModel;
 
 use Flynt\FieldVariables;
 use Flynt\Utils\Oembed;
 
-add_filter('Flynt/addComponentData?name=BlockVideoOembed', function ($data) {
+add_filter('Flynt/addComponentData?name=BlockVideoOembedModel', function ($data) {
     $data['video'] = Oembed::setSrcAsDataAttribute(
         $data['oembed'],
         [
@@ -19,8 +19,8 @@ add_filter('Flynt/addComponentData?name=BlockVideoOembed', function ($data) {
 function getACFLayout()
 {
     return [
-        'name' => 'blockVideoOembed',
-        'label' => 'Block: Video News',
+        'name' => 'BlockVideoOembedModel',
+        'label' => 'Block: Video Model',
         'sub_fields' => [
             [
                 'label' => __('General', 'flynt'),

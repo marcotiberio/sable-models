@@ -23,6 +23,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockLandingPage\getACFLayout(),
                     Components\FormContactForm7\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),
+                    Components\BlockVideoOembedModel\getACFLayout(),
                     Components\BlockWysiwyg\getACFLayout(),
                     Components\SliderImages\getACFLayout(),
                 ]

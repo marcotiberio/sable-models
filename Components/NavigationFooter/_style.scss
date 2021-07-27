@@ -9,6 +9,7 @@
   padding: $container-padding-mobile;
   position: fixed;
   width: 100vw;
+  z-index: 1001;
     
 
   @media (max-width: $breakpoint-tablet-horizontal) {

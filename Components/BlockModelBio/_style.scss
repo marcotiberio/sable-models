@@ -3,12 +3,12 @@
   width: 50vw;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
-    margin: calc(10vw - 2px) 0;
-    width: 100%;
+    margin: calc(10vw - 2px) 0 0;
+    width: calc(80vw + 1px);
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {
-    margin: 20vw 0;
+    margin: 20vw 0 0;
   }
 
   .content {

@@ -1,0 +1,10 @@
+<div class="flyntComponent" is="flynt-block-video-oembed-model">
+  {% if title %}
+    <div class="title boxPadding">
+      <h3>{{ title }} </h3>
+    </div>
+  {% endif %}
+  <div class="container">
+    {% include 'Partials/_video.twig' ignore missing with {video: video, image: posterImage} only %}
+  </div>
+</div>
