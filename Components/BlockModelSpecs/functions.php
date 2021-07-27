@@ -23,19 +23,8 @@ function getACFLayout()
                 'type' => 'text',
             ],
             [
-                'label' => __('Social Icon', 'flynt'),
-                'name' => 'socialIcon',
-                'type' => 'image',
-                'preview_size' => 'small',
-                'required' => 1,
-                'mime_types' => 'gif,jpg,jpeg,png',
-                'wrapper' => [
-                    'width' => 50
-                ],
-            ],
-            [
-                'label' => __('Social Link', 'flynt'),
-                'name' => 'socialLink',
+                'label' => __('Download Portfolio', 'flynt'),
+                'name' => 'downloadPortfolio',
                 'type' => 'url',
                 'wrapper' => [
                     'width' => 50

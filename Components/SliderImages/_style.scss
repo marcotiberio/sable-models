@@ -4,7 +4,7 @@
   border-top: 0 solid $color-text;
   width: 50vw;
 
-  @media (max-width: $breakpoint-mobile-horizontal) {
+  @media (max-width: $breakpoint-tablet-horizontal) {
     border-bottom: 0;
     border-left: 0;
     width: 100vw;
@@ -29,22 +29,23 @@
   .slider {
     background-color: $color-background;
     border: 1px solid $color-border;
+    height: calc(30vw + 1px);
     margin-left: 0;
     margin-right: 20vw;
     position: relative;
     width: calc(50vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: 40vw;
+      height: calc(40vw + 1px);
       margin-right: 0;
-      padding-left: $container-padding-mobile;
+      padding-left: 0;
       width: calc(60vw + 1px);
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
       height: 60vw;
       margin-right: 0;
-      padding-left: $container-padding-mobile;
+      padding-left: 0;
       width: 100vw;
     }
 
@@ -115,9 +116,9 @@
 
       @media (max-width: $breakpoint-mobile-horizontal) {
         height: 100%;
-        margin: 0 auto;
-        object-fit: auto;
-        width: auto;
+        margin: 0;
+        object-fit: cover;
+        width: 100%;
       }
     }
 

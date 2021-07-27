@@ -1,14 +1,14 @@
 <?php
 
-namespace Flynt\Components\BlockWysiwyg;
+namespace Flynt\Components\BlockModelBio;
 
 use Flynt\FieldVariables;
 
 function getACFLayout()
 {
     return [
-        'name' => 'blockWysiwyg',
-        'label' => 'Block: Text',
+        'name' => 'BlockModelBio',
+        'label' => 'Block: Model Bio',
         'sub_fields' => [
             [
                 'label' => __('General', 'flynt'),
@@ -25,12 +25,7 @@ function getACFLayout()
                     'textLeft' => '<i class=\'dashicons dashicons-editor-alignleft\' title=\'Align text left\'></i>',
                     'textCenter' => '<i class=\'dashicons dashicons-editor-aligncenter\' title=\'Align text center\'></i>'
                 ]
-            ],
-            [
-                'label' => __('Title', 'flynt'),
-                'name' => 'preContent',
-                'type' => 'text',
-            ],
+                ],
             [
                 'label' => __('Content', 'flynt'),
                 'name' => 'contentHtml',

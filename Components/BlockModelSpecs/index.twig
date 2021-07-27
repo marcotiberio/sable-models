@@ -1,28 +1,6 @@
 <div class="flyntComponent" is="flynt-block-model-specs">
   <div class="container">
     <div class="h2 header name">{{ name }}</div>
-    <a href="{{ socialLink }}" target="_blank" class="header social">
-      <div class="social-icon">
-        <figure class="figure">
-          {% set gif = socialIcon.post_mime_type == 'image/gif' %}
-          <img class="figure-image {{ not gif ? 'lazyload' }}"
-            src="{{ not gif ? socialIcon.src|resizeDynamic(800) : socialIcon.src }}"
-            {% if not gif %}
-              srcset="{{ placeholderImage(800, 800 / socialIcon.aspect) }}"
-              data-srcset="
-                {{ socialIcon.src|resizeDynamic(1920) }} 1920w,
-                {{ socialIcon.src|resizeDynamic(1440) }} 1440w,
-                {{ socialIcon.src|resizeDynamic(1320) }} 1320w,
-                {{ socialIcon.src|resizeDynamic(1024) }} 1024w,
-                {{ socialIcon.src|resizeDynamic(800) }} 800w,
-                {{ socialIcon.src|resizeDynamic(600) }} 600w,
-                {{ socialIcon.src|resizeDynamic(375) }} 375w"
-              data-sizes="auto"
-            {% endif %}
-            alt="{{ socialIcon.alt|e }}">
-        </figure>
-      </div>
-    </a>
     <ul class="grid">
       {% for item in items %}
         {% if item.spec and item.details %}
@@ -35,5 +13,6 @@
         {% endif %}
       {% endfor %}
     </ul>
+    <a href="{{ downloadPortfolio }}" target="_blank" class="header download">Download Portfolio</a>
   </div>
 </div>

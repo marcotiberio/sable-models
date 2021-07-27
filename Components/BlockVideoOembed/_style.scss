@@ -46,7 +46,7 @@
   .container {
     background-color: $white;
     border: 1px solid $black;
-    width: calc(60vw + 1px);
+    width: calc(50vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
       height: 60vw;

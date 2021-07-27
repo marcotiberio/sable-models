@@ -1,0 +1,44 @@
+[is='flynt-block-model-bio'] {
+  margin: 10vw 0;
+  width: 50vw;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin: calc(10vw - 2px) 0;
+    width: 100%;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin: 20vw 0;
+  }
+
+  .content {
+    @include reset-content-margins;
+    background-color: $color-background;
+    border: 1px solid $color-border;
+    text-align: inherit;
+    width: calc(100% + 1px);
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      margin-bottom: 10vw;
+      width: calc(100% + 1px);
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      margin-bottom: 20vw;
+      width: 100vw;
+    }
+
+    &--textLeft {
+      text-align: left;
+    }
+
+    &--textCenter {
+      text-align: center;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}

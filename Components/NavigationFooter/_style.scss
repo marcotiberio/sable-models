@@ -1,15 +1,40 @@
 [is='flynt-navigation-footer'] {
+  background-color: $color-background;
+  border-top: 1px solid $black;
+  bottom: 0;
   font-size: 0.8rem;
+  height: 2.5vw;
+  left: 0;
+  margin-bottom: 0;
+  padding: $container-padding-mobile;
+  position: fixed;
+  width: 100vw;
+    
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    height: 10vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    height: 20vw;
+  }
 
   .container {
-    padding-bottom: $component-spacing-mobile;
-    padding-top: $component-spacing-mobile;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 0;
+    padding-top: 0;
     text-align: center;
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (max-width: $breakpoint-tablet-horizontal) {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      padding-bottom: $container-padding-mobile;
+      padding-top: $container-padding-mobile;
     }
   }
 

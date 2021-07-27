@@ -51,6 +51,12 @@
           flex-flow: row wrap;
           height: 5vw;
           justify-content: flex-start;
+          text-decoration: none;
+          transition: all 0.2s linear;
+
+          &:hover {
+            opacity: 0.5;
+          }
 
           @media (max-width: $breakpoint-tablet-horizontal) {
             background-color: $color-background;
@@ -72,9 +78,13 @@
         }
 
         &-image {
-          border: 1px solid $black;
+          border-bottom: 1px solid $black;
+          border-left: 1px solid $black;
+          border-right: 0;
+          border-top: 1px solid $black;
           height: calc(15vw + 1px);
           object-fit: cover;
+          transition: all 0.2s linear;
 
           @media (max-width: $breakpoint-tablet-horizontal) {
             height: 40vw;

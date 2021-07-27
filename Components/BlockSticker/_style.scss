@@ -1,45 +1,78 @@
 [is='flynt-block-sticker'] {
 
-  @keyframes rotate {
+  animation: cssmarquee 100s linear infinite alternate;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateY(70%);
+  width: 100vw;
+  z-index: 10000;
+
+  @keyframes cssmarquee {
+    0% {
+      transform: translateY(70%);
+    }
+
+    10% {
+      transform: translateX(70%) translateY(20%);
+    }
+
+    20% {
+      transform: translateX(23%) translateY(57%);
+    }
+
+    30% {
+      transform: translateX(36%) translateY(13%);
+    }
+
+    40% {
+      transform: translateX(98%) translateY(29%);
+    }
+
+    50% {
+      transform: translateX(47%) translateY(87%);
+    }
+
+    60% {
+      transform: translateX(7%) translateY(73%);
+    }
+
+    70% {
+      transform: translateX(23%) translateY(57%);
+    }
+
+    80% {
+      transform: translateX(14%) translateY(60%);
+    }
+
+    90% {
+      transform: translateX(2%) translateY(87%);
+    }
+
     100% {
-      transform: rotate(360deg);
+      transform: translateY(0%);
     }
   }
 
-  height: auto;
-  left: 51%;
-  position: fixed;
-  top: 11vw;
-  width: 8vw;
-
   @media (max-width: $breakpoint-tablet-horizontal) {
-    height: auto;
-    left: 70vw;
-    position: fixed;
-    top: 10vw;
-    width: 20vw;
-  }
-
-  @media (max-width: $breakpoint-mobile-horizontal) {
-    height: auto;
-    left: 80vw;
-    position: fixed;
-    top: 20vw;
-    width: 20vw;
+    display: none;
   }
 
   .container {
     animation: rotate linear infinite;
     float: left;
+    height: 10vw;
     position: relative;
     transition: all 0.666s;
-  
-    @for $i from 1 through 100 {
-      &:nth-child(#{$i}) {
-        animation-delay: -(random(1000) / 100) + s;
-        animation-duration: ((random(800) / 100)+2) + s;
-      }
-    }
+    width: 10vw;
+
+    // @for $i from 1 through 100 {
+    //   &:nth-child(#{$i}) {
+    //     animation-delay: -(random(1000) / 100) + s;
+    //     animation-duration: ((random(800) / 100)+2) + s;
+    //   }
+    // }
   }
 
   .figure {

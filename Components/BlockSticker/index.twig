@@ -1,5 +1,5 @@
 <div class="flyntComponent sticker" is="flynt-block-sticker">
-  <div class="container">
+  <div class="container stickerBubble" id="sticker">
     <figure class="figure">
       {% set gif = image.post_mime_type == 'image/gif' %}
       <img class="figure-image {{ not gif ? 'lazyload' }}"

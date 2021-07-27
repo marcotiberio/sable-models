@@ -16,6 +16,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                 'button_label' => __('Add Component', 'flynt'),
                 'layouts' => [
                     Components\BlockListingModels\getACFLayout(),
+                    Components\BlockModelBio\getACFLayout(),
                     Components\BlockModelSpecs\getACFLayout(),
                     Components\BlockNewsRepeater\getACFLayout(),
                     Components\BlockSticker\getACFLayout(),
