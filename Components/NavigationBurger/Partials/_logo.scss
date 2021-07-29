@@ -2,10 +2,11 @@
   display: block;
   flex-shrink: 0;
   height: 100%;
+  transform: translateX(60px) translateY(-70px);
 
   &-image {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 50vw;
   }
 }
 

@@ -30,13 +30,24 @@ function getACFLayout()
                 ]
             ],
             [
-                'label' => __('Link to Home', 'flynt'),
-                'name' => 'linkHome',
-                'type' => 'url',
+                'label' => __('Content', 'flynt'),
+                'name' => 'contentHtml',
+                'type' => 'wysiwyg',
+                'delay' => 1,
+                'media_upload' => 0,
+                'required' => 1,
                 'wrapper' => [
                     'width' => '50',
                 ]
             ]
+            // [
+            //     'label' => __('Link to Home', 'flynt'),
+            //     'name' => 'linkHome',
+            //     'type' => 'url',
+            //     'wrapper' => [
+            //         'width' => '50',
+            //     ]
+            // ]
         ]
     ];
 }

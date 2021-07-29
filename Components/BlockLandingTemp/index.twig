@@ -1,6 +1,9 @@
 <div class="flyntComponent" is="flynt-block-landing-temp">
   <div class="container">
-    <a href="">
+      <div class="logotype">
+        Sable<br>
+        Models
+      </div>
       <figure class="figure">
         {% set gif = image.post_mime_type == 'image/gif' %}
         <img class="figure-image {{ not gif ? 'lazyload' }}"
@@ -22,6 +25,8 @@
           <figcaption class="figure-caption">{{ image.caption|e }}</figcaption>
         {% endif %}
       </figure>
-    </a>
+  </div>
+  <div class="content">
+    {{ contentHtml|e('wp_kses_post') }}
   </div>
 </div>
