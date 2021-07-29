@@ -21,6 +21,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockNewsRepeater\getACFLayout(),
                     Components\BlockSticker\getACFLayout(),
                     Components\BlockLandingPage\getACFLayout(),
+                    Components\BlockLandingTemp\getACFLayout(),
                     Components\FormContactForm7\getACFLayout(),
                     Components\BlockVideoOembed\getACFLayout(),
                     Components\BlockVideoOembedModel\getACFLayout(),

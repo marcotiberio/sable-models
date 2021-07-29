@@ -1,0 +1,25 @@
+[is='flynt-block-landing-temp'] {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  z-index: 10000;
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    position: fixed;
+    top: 0;
+  }
+
+  .figure {
+    margin: 0 auto;
+    transition: all 2s ease-in-out;
+    width: 300px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(2);
+    }
+  }
+}
