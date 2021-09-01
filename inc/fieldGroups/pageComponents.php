@@ -20,6 +20,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockModelSpecs\getACFLayout(),
                     Components\BlockNewsRepeater\getACFLayout(),
                     Components\BlockSticker\getACFLayout(),
+                    Components\BlockLandingAnimation\getACFLayout(),
                     Components\BlockLandingPage\getACFLayout(),
                     Components\BlockLandingTemp\getACFLayout(),
                     Components\FormContactForm7\getACFLayout(),
