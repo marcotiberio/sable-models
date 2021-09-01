@@ -1,81 +1,40 @@
 [is='flynt-block-sticker'] {
 
-  animation: cssmarquee 100s linear infinite alternate;
-  height: 100vh;
+  height: 10px;
   left: 0;
   position: fixed;
   top: 0;
-  transform: translateY(70%);
-  width: 100vw;
-  z-index: 1000;
-
-  @keyframes cssmarquee {
-    0% {
-      transform: translateY(70%);
-    }
-
-    10% {
-      transform: translateX(70%) translateY(20%);
-    }
-
-    20% {
-      transform: translateX(23%) translateY(57%);
-    }
-
-    30% {
-      transform: translateX(36%) translateY(13%);
-    }
-
-    40% {
-      transform: translateX(98%) translateY(29%);
-    }
-
-    50% {
-      transform: translateX(47%) translateY(87%);
-    }
-
-    60% {
-      transform: translateX(7%) translateY(73%);
-    }
-
-    70% {
-      transform: translateX(23%) translateY(57%);
-    }
-
-    80% {
-      transform: translateX(14%) translateY(60%);
-    }
-
-    90% {
-      transform: translateX(2%) translateY(87%);
-    }
-
-    100% {
-      transform: translateY(0%);
-    }
-  }
+  width: 10px;
+  z-index: 999;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     display: none;
   }
 
-  .container {
-    animation: rotate linear infinite;
-    float: left;
-    height: 10vw;
-    position: relative;
-    transition: all 0.666s;
-    width: 10vw;
-
-    // @for $i from 1 through 100 {
-    //   &:nth-child(#{$i}) {
-    //     animation-delay: -(random(1000) / 100) + s;
-    //     animation-duration: ((random(800) / 100)+2) + s;
-    //   }
-    // }
-  }
-
   .figure {
-    margin: 0 auto;
+    height: 200px;
+    width: 200px;
   }
+
+  .x {
+    animation: x 13s linear infinite alternate;
+  }
+
+  .y {
+    animation: y 7s linear infinite alternate;
+    z-index: 10000;
+  }
+
+  @keyframes x {
+    100% {
+      transform: translateX(calc(100vw - 200px));
+    }
+  }
+
+  @keyframes y {
+    100% {
+      transform: translateY(calc(100vh - 200px));
+    }
+  }
+
 }

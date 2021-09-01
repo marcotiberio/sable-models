@@ -1,8 +1,7 @@
-<div class="flyntComponent sticker" is="flynt-block-sticker">
-  <div class="container stickerBubble" id="sticker">
-    <figure class="figure">
+<div class="flyntComponent" is="flynt-block-sticker">
+    <figure class="figure x">
       {% set gif = image.post_mime_type == 'image/gif' %}
-      <img class="figure-image {{ not gif ? 'lazyload' }}"
+      <img class="figure-image {{ not gif ? 'lazyload' }} y"
         src="{{ not gif ? image.src|resizeDynamic(800) : image.src }}"
         {% if not gif %}
           srcset="{{ placeholderImage(800, 800 / image.aspect) }}"
@@ -21,5 +20,4 @@
         <figcaption class="figure-caption">{{ image.caption|e }}</figcaption>
       {% endif %}
     </figure>
-  </div>
 </div>

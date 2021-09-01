@@ -3,7 +3,7 @@
 
   display: none;
 
-  z-index: 1000;
+  z-index: 996;
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
@@ -25,13 +25,13 @@
   }
 
   .logo {
-    left: -190px;
+    left: -150px;
     position: fixed;
-    top: -212px;
+    top: -135px;
 
     &-image {
       height: 100%;
-      width: 40vw;
+      width: 35vw;
     }
   }
 
