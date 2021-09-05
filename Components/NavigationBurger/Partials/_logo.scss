@@ -27,7 +27,7 @@
   width: 40vw;
   z-index: 1001;
 
-  @media (max-width: $breakpoint-tablet-horizontal) {
+  @media (min-width: $breakpoint-mobile-horizontal) {
     height: 10vw;
     width: 50vw;
   }
