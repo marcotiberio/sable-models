@@ -2,7 +2,6 @@
   display: block;
   flex-shrink: 0;
   height: 100%;
-  transform: translateX(60px) translateY(-70px);
 
   &-image {
     height: auto;
@@ -12,33 +11,24 @@
 
 .logotype {
   align-items: center;
-  background-color: $color-background;
+  color: $black;
   display: flex;
+  font-family: 'SandroGrottesco', sans-serif;
+  font-size: 20px;
   height: 20vw;
-  justify-content: center;
+  justify-content: flex-end;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  position: fixed;
+  right: $container-padding-mobile;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
   width: 40vw;
-  // transform: translateX(-40px) translateY(-20px);
+  z-index: 1001;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     height: 10vw;
     width: 50vw;
-  }
-
-  @media (max-width: $breakpoint-mobile-horizontal) {
-    background-color: transparent;
-    height: 10vw;
-    text-align: right;
-  }
-
-  h1 {
-    align-items: center;
-    display: flex;
-    font-family: 'SandroGrottesco', Helvetica, Arial, sans-serif;
-    height: 100%;
-    justify-content: center;
-    margin-bottom: 0;
-    padding-top: 0;
-    text-decoration: underline;
-    text-transform: uppercase;
   }
 }

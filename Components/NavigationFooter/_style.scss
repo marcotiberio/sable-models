@@ -7,7 +7,7 @@
   left: 0;
   margin-bottom: 0;
   padding: $container-padding-mobile;
-  position: fixed;
+  position: relative;
   width: 100vw;
   z-index: 998;
     
@@ -41,7 +41,7 @@
 
   .content {
     @include reset-content-margins;
-    margin: 10px 0 0;
+    margin: 0;
 
     @media (min-width: $breakpoint-tablet) {
       margin: 0;

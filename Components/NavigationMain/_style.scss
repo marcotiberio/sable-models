@@ -3,7 +3,7 @@
 
   display: none;
 
-  z-index: 996;
+  
 
   @media (min-width: $breakpoint-desktop) {
     display: block;
@@ -28,6 +28,7 @@
     left: -140px;
     position: fixed;
     top: -125px;
+    z-index: 1000;
 
     &-image {
       height: 100%;
@@ -35,27 +36,26 @@
     }
   }
 
-  .logotype {
-    align-items: center;
-    background-color: $color-background;
-    display: flex;
-    height: 10vw;
-    justify-content: center;
-    left: 0;
+  .blob {
+    left: -250px;
     position: fixed;
-    top: 0;
-    width: 20vw;
-    // transform: translateX(-40px) translateY(-20px);
+    top: -250px;
+  }
 
-    h1 {
-      display: block;
-      font-family: 'SandroGrottesco', Helvetica, Arial, sans-serif;
-      height: 100%;
-      margin-bottom: 0;
-      padding-top: 0;
-      text-decoration: underline;
-      text-transform: uppercase;
-    }
+  .logotype {
+    color: $black;
+    display: block;
+    font-family: 'SandroGrottesco', sans-serif;
+    font-size: 25px;
+    height: 10vw;
+    left: 30px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    position: fixed;
+    text-transform: uppercase;
+    top: 30px;
+    width: 20vw;
+    z-index: 1001;
   }
 
   .menu {
@@ -66,6 +66,7 @@
     grid-template-columns: 1;
     margin-right: 0;
     padding-left: 0;
+    z-index: 1106;
 
     &-item--current {
       .menu-link {

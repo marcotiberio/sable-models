@@ -27,6 +27,7 @@ add_action('Flynt/afterRegisterComponents', function () {
                     Components\BlockVideoOembed\getACFLayout(),
                     Components\BlockVideoOembedModel\getACFLayout(),
                     Components\BlockWysiwyg\getACFLayout(),
+                    Components\BlockModelGalleryMobile\getACFLayout(),
                     Components\SliderImages\getACFLayout(),
                 ]
             ]

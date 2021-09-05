@@ -2,12 +2,10 @@
   border-bottom: 0;
   border-left: 0 solid $color-text;
   border-top: 0 solid $color-text;
-  width: 50vw;
+  width: 55vw;
 
-  @media (max-width: $breakpoint-tablet-horizontal) {
-    border-bottom: 0;
-    border-left: 0;
-    width: 100vw;
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    display: none;
   }
 
   .preContent {
@@ -29,17 +27,17 @@
   .slider {
     background-color: $color-background;
     border: 1px solid $color-border;
-    height: calc(30vw + 1px);
+    height: calc(35vw + 1px);
     margin-left: 0;
     margin-right: 20vw;
     position: relative;
-    width: calc(50vw + 1px);
+    width: calc(55vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: calc(40vw + 1px);
+      height: calc(50vw + 1px);
       margin-right: 0;
       padding-left: 0;
-      width: calc(60vw + 1px);
+      width: calc(80vw + 1px);
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {

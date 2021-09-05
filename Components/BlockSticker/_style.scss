@@ -12,8 +12,8 @@
   }
 
   .figure {
-    height: 200px;
-    width: 200px;
+    height: 125px;
+    width: 125px;
   }
 
   .x {
@@ -27,13 +27,13 @@
 
   @keyframes x {
     100% {
-      transform: translateX(calc(100vw - 200px));
+      transform: translateX(calc(100vw - 125px));
     }
   }
 
   @keyframes y {
     100% {
-      transform: translateY(calc(100vh - 200px));
+      transform: translateY(calc(100vh - 125px));
     }
   }
 

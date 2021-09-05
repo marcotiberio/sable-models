@@ -1,0 +1,36 @@
+[is='flynt-block-model-gallery-mobile'] {
+
+  @media (min-width: $breakpoint-mobile-horizontal) {
+    display: none;
+  }
+
+  margin-top: 20vw;
+
+  .grid {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: ($gutter-width * -1) 0 0 ($gutter-width * -1);
+  }
+
+  .grid-item {
+    height: 100vw;
+    margin-bottom: 20vw;
+    padding: 0;
+    width: 100%;
+
+    img {
+      background: $color-contrast;
+      display: block;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  .grid-item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

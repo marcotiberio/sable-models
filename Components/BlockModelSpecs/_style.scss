@@ -1,5 +1,5 @@
 [is='flynt-block-model-specs'] {
-  width: 20vw;
+  width: 15vw;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     height: 100%;
@@ -20,7 +20,7 @@
     border-left: 1px solid $color-border;
     border-top: 1px solid $color-border;
     display: flex;
-    height: calc(5vw + 0.5px);
+    height: calc(5vw + 0px);
     justify-content: flex-start;
     margin-bottom: 0;
     margin-left: 0;
@@ -30,15 +30,16 @@
     width: 20vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: calc(10vw + 0.5px);
+      height: calc(10vw + 0px);
       margin-bottom: 0;
       width: 40vw;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
-      height: calc(20vw + 0.5px);
+      height: calc(20vw + 0px);
       margin-bottom: 0;
-      width: 80vw;
+      margin-left: 20vw;
+      width: 60vw;
     }
   }
 
@@ -59,7 +60,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 20vw;
+    height: calc(25vw + 1px);
     justify-content: flex-start;
     margin: 0;
 
@@ -70,7 +71,8 @@
     @media (max-width: $breakpoint-mobile-horizontal) {
       height: 100vw;
       justify-content: space-between;
-      width: 80vw;
+      margin-left: 20vw;
+      width: 60vw;
     }
   }
 

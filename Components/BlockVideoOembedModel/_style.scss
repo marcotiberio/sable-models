@@ -1,6 +1,8 @@
 [is='flynt-block-video-oembed-model'] {
   @import 'Partials/video';
 
+  margin-bottom: 10vw;
+
   @media (max-width: $breakpoint-tablet-horizontal) {
     margin-bottom: 20vw;
     margin-left: 0;
