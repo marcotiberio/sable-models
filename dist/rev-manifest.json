@@ -2,6 +2,8 @@
   "Components/NavigationBurger/Assets/logo.svg": "Components/NavigationBurger/Assets/logo-4627cdfa7d.svg",
   "Components/NavigationMain/Assets/logo.png": "Components/NavigationMain/Assets/logo-25eeae13f5.png",
   "Components/NavigationMain/Assets/logo.svg": "Components/NavigationMain/Assets/logo-4627cdfa7d.svg",
+  "Components/SliderImages/Assets/arrow_left.svg": "Components/SliderImages/Assets/arrow_left-35915f86c0.svg",
+  "Components/SliderImages/Assets/arrow_right.svg": "Components/SliderImages/Assets/arrow_right-ae3ccb4c48.svg",
   "assets/admin.css": "assets/admin-6de522ed27.css",
   "assets/admin.js": "assets/admin-7d78182351.js",
   "assets/admin.js.LICENSE.txt": "assets/admin-23200fb757.js.LICENSE.txt",
@@ -20,7 +22,7 @@
   "assets/icons/check-circle.svg": "assets/icons/check-circle-98401bcdb9.svg",
   "assets/icons/spinner.svg": "assets/icons/spinner-2e5c842fc5.svg",
   "assets/images/logo.png": "assets/images/logo-25eeae13f5.png",
-  "assets/main.css": "assets/main-e89b159c63.css",
+  "assets/main.css": "assets/main-b2c796f3d2.css",
   "assets/main.js": "assets/main-29992b51b2.js",
   "assets/main.js.LICENSE.txt": "assets/main-957f80e714.js.LICENSE.txt"
 }
