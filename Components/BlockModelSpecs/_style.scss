@@ -69,7 +69,7 @@
     }
   
     @media (max-width: $breakpoint-mobile-horizontal) {
-      height: 100vw;
+      height: calc(60vw + 1px);
       justify-content: space-between;
       margin-left: 20vw;
       width: 60vw;

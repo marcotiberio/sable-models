@@ -2,12 +2,14 @@
   align-items: center;
   background-color: $white;
   display: flex;
-  height: 100vh;
+  height: 102vh;
   justify-content: center;
+  margin-top: 4vw;
   width: 100vw;
   z-index: 10000;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-top: 0;
     position: fixed;
     top: 0;
   }
@@ -38,6 +40,7 @@
 
   .blob {
     @media (max-width: $breakpoint-mobile-horizontal) {
+      transform: translateY(-15px);
       width: 100vw;
     }
   }

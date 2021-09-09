@@ -21,25 +21,25 @@
     height: 100%;
     justify-content: flex-start;
     padding-top: 20vw;
-    width: 10vw;
+    width: calc(10vw + 1px);
   }
 
   .logo {
-    left: -140px;
+    left: 0;
     position: fixed;
-    top: -125px;
+    top: 0;
     z-index: 1000;
 
     &-image {
       height: 100%;
-      width: 450px;
+      width: 500px;
     }
   }
 
   .blob {
-    left: -250px;
+    left: -280px;
     position: fixed;
-    top: -250px;
+    top: -260px;
   }
 
   .logotype {
@@ -64,6 +64,7 @@
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 1;
+    height: fit-content;
     margin-right: 0;
     padding-left: 0;
     z-index: 1106;
@@ -75,6 +76,10 @@
     }
 
     &-item {
+      background-color: $white;
+      border-left: 1px solid $black;
+      border-right: 1px solid $black;
+      border-top: 1px solid $black;
       height: 5vw;
 
       .menu-link {
@@ -100,7 +105,7 @@
     }
 
     &-item:nth-child(odd) {
-      border-bottom: 1px solid $color-border;
+      // border-bottom: 1px solid $color-border;
     }
     
   }

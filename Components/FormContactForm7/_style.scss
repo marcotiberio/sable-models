@@ -2,13 +2,18 @@
   $color-error: #ef3f45;
 
   margin-bottom: 10vw;
+  margin-left: 20vw;
+  width: calc(50vw + 1px);
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     margin-bottom: 20vw;
+    margin-left: 10vw;
+    width: calc(60vw + 1px);
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {
     margin-bottom: 20vw;
+    margin-left: 0;
   }
 
   .preContent {
@@ -25,12 +30,12 @@
 
   .form {
     border: 1px solid $black;
-    margin: 0 20vw;
-    width: calc(50vw + 1px);
+    margin: 0;
+    width: 100%;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      margin: 0 10vw;
-      width: calc(60vw + 1px);
+      margin: 0;
+      width: 100%;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {

@@ -139,6 +139,7 @@ a {
   &:hover,
   &:focus {
     color: darken($color-accent, 10%);
+    outline: none;
   }
 }
 
@@ -281,6 +282,7 @@ button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline: none;
   padding: 0;
   text-align: inherit;
 }
@@ -297,6 +299,7 @@ button {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: inherit;
+  outline: none;
   padding: 1rem 1.5rem;
   text-align: center;
   text-decoration: none;
@@ -316,18 +319,21 @@ button {
     background-color: $color-background-dark;
     border-color: $color-background-dark;
     color: $color-background;
+    outline: none;
   }
 
   &--ghost {
     background-color: transparent;
     border-color: $color-accent;
     color: $color-accent;
+    outline: none;
 
     &:hover,
     &:focus {
       background-color: transparent;
       border-color: $color-background-dark;
       color: $color-background-dark;
+      outline: none;
     }
   }
 
@@ -340,6 +346,7 @@ button {
     background-color: transparent;
     border: 0;
     color: $color-accent;
+    outline: none;
     padding: 0;
     position: relative;
     text-transform: none;
@@ -356,6 +363,7 @@ button {
   display: inline-block;
   font-size: 0.8rem;
   max-width: 100%;
+  outline: none;
   overflow: hidden;
   padding: 0.125rem 1rem;
   text-decoration: none;
@@ -366,6 +374,7 @@ button {
   &:hover,
   &:focus {
     color: $color-background;
+    outline: none;
   }
 }
 
@@ -534,6 +543,15 @@ select {
 
 .mainContent {
   flex: 1 0 auto;
+  margin-top: calc(-5vw + 1px);
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-top: 0;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin-top: 0;
+  }
 }
 
 .page-child .mainContent {
@@ -773,6 +791,7 @@ select {
       background-color: $color-accent;
       border-color: $color-accent;
       color: $color-background;
+      outline: none;
     }
 
     &--ghost {
@@ -781,6 +800,7 @@ select {
         background-color: transparent;
         border-color: $color-accent;
         color: $color-accent;
+        outline: none;
       }
     }
 
@@ -789,6 +809,7 @@ select {
       &:focus {
         background-color: transparent;
         color: $color-background;
+        outline: none;
 
         &::before {
           background-color: $color-background;
@@ -822,36 +843,42 @@ select {
   a:hover,
   a:focus {
     color: $color-background-dark;
+    outline: none;
   }
 
   .button {
     background-color: $color-background-dark;
     border-color: $color-background-dark;
     color: $color-background;
+    outline: none;
 
     &:hover,
     &:focus {
       background-color: $color-background;
       border-color: $color-background;
       color: $color-background-dark;
+      outline: none;
     }
 
     &--ghost {
       background-color: transparent;
       border-color: $color-background-dark;
       color: $color-background-dark;
+      outline: none;
 
       &:hover,
       &:focus {
         background-color: transparent;
         border-color: $color-background;
         color: $color-background;
+        outline: none;
       }
     }
 
     &--link {
       background-color: transparent;
       color: $color-background;
+      outline: none;
     }
   }
 
@@ -893,30 +920,35 @@ select {
     border-color: $black;
     border-radius: 0;
     color: $black;
+    outline: none;
 
     &:hover,
     &:focus {
       background-color: $black;
       border-color: $black;
       color: $white;
+      outline: none;
     }
 
     &--ghost {
       background-color: transparent;
       border-color: $color-accent;
       color: $color-accent;
+      outline: none;
 
       &:hover,
       &:focus {
         background-color: transparent;
         border-color: $black;
         color: $black;
+        outline: none;
       }
     }
 
     &--link {
       background-color: transparent;
       color: $color-accent;
+      outline: none;
     }
   }
 

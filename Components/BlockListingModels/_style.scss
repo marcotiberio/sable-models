@@ -1,10 +1,10 @@
 [is='flynt-block-listing-models'] {
   @media (max-width: $breakpoint-tablet-horizontal) {
-    margin: 0 10vw;
+    margin: 10vw;
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {
-    margin: 0 20vw;
+    margin: 20vw;
   }
   
   .preContent {
@@ -35,6 +35,10 @@
 
     &-item {
       width: 100%;
+
+      @media (max-width: $breakpoint-tablet-horizontal) {
+        width: 100%;
+      }
   
       .content {
         display: flex;
@@ -49,7 +53,7 @@
           border-top: 1px solid $color-text;
           display: flex;
           flex-flow: row wrap;
-          height: 5vw;
+          height: calc(5vw - 1px);
           justify-content: flex-start;
           text-decoration: none;
           transition: all 0.2s linear;
@@ -60,14 +64,14 @@
 
           @media (max-width: $breakpoint-tablet-horizontal) {
             background-color: $color-background;
-            height: 10vw;
-            width: 30vw;
+            height: calc(10vw + 1px);
+            width: calc(30vw + 1px);
           }
 
           @media (max-width: $breakpoint-mobile-horizontal) {
             background-color: $color-background;
-            height: 20vw;
-            width: 60vw;
+            height: calc(20vw + 1px);
+            width: calc(60vw + 1px);
           }
 
           .content-title {
@@ -84,6 +88,7 @@
           border-top: 1px solid $black;
           height: calc(15vw + 1px);
           object-fit: cover;
+          outline: none;
           transition: all 0.2s linear;
 
           @media (max-width: $breakpoint-tablet-horizontal) {
@@ -91,7 +96,7 @@
           }
 
           @media (max-width: $breakpoint-mobile-horizontal) {
-            height: 80vw;
+            height: calc(80vw + 1px);
           }
         }
   
