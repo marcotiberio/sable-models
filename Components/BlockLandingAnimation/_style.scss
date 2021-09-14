@@ -40,7 +40,7 @@
 
   .blob {
     @media (max-width: $breakpoint-mobile-horizontal) {
-      transform: translateY(-15px);
+      transform: translateY(-20px) translateX(-10px);
       width: 100vw;
     }
   }

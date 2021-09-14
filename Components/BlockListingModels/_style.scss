@@ -26,19 +26,25 @@
     @media (max-width: $breakpoint-tablet-horizontal) {
       column-gap: 20vw;
       grid-template-columns: repeat(2, 30vw);
-      row-gap: 10vw;
+      row-gap: 0;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
       column-gap: 20vw;
       grid-template-columns: 1fr;
-      row-gap: 20vw;
+      row-gap: 0;
     }
 
     &-item {
       width: 100%;
 
       @media (max-width: $breakpoint-tablet-horizontal) {
+        margin-bottom: calc(10vw - 1px);
+        width: 100%;
+      }
+
+      @media (max-width: $breakpoint-mobile-horizontal) {
+        margin-bottom: calc(20vw - 1px);
         width: 100%;
       }
   
@@ -100,11 +106,11 @@
           transition: all 0.2s linear;
 
           @media (max-width: $breakpoint-tablet-horizontal) {
-            height: 40vw;
+            height: calc(40vw + 1px);
           }
 
           @media (max-width: $breakpoint-mobile-horizontal) {
-            height: calc(80vw + 1px);
+            height: calc(90vw + 1px);
           }
         }
   
