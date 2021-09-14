@@ -31,6 +31,7 @@ html {
     background-size: 20vw 20vw;
   }
   @media (max-width: $breakpoint-mobile-horizontal) {
+    background-attachment: scroll;
     background-size: 20vw 20vw;
   }
 
@@ -597,14 +598,14 @@ select {
 }
 
 .centerContainerGrid {
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-tablet-horizontal) {
     margin-left: 20vw;
     margin-top: 10vw;
   }
 }
 
 .centerContainerText {
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-tablet-horizontal) {
     margin-left: 20vw;
     margin-top: 10vw;
   }
@@ -902,24 +903,25 @@ select {
   color: $color-text;
 
   #{$heading-selectors} {
-    color: $color-headline;
+    color: $black;
+    text-decoration: underline;
 
     a,
     a:hover,
     a:focus {
-      color: $color-headline;
+      color: $black;
       text-decoration: none;
     }
   }
 
   a,
   .feather {
-    color: $color-accent;
+    color: $black;
   }
 
   a:hover,
   a:focus {
-    color: darken($color-accent, 10%);
+    color: $black;
   }
 
   .button {

@@ -13,7 +13,7 @@
     height: 10vw;
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: $breakpoint-tablet-horizontal) {
     display: none;
   }
 

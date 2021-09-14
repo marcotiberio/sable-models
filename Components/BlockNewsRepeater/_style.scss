@@ -12,13 +12,12 @@
   .title {
     align-items: center;
     background-color: $color-background;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 0;
     border-left: 1px solid $color-border;
     border-top: 1px solid $color-border;
     display: flex;
-    height: 5vw;
+    height: calc(5vw - 1px);
     justify-content: flex-start;
-    margin-bottom: 5vw;
     width: 50vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
