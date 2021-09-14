@@ -62,12 +62,16 @@ body {
   margin-bottom: 0.9rem;
   margin-top: 0;
 
-  a,
-  a:hover,
-  a:focus {
-    color: $color-headline;
-    text-decoration: none;
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
+  
 }
 
 h1,
@@ -133,13 +137,14 @@ h6,
 }
 
 a {
-  color: $color-accent;
+  color: $black;
+  text-decoration: underline;
   transition: color 0.2s ease-out;
 
   &:hover,
   &:focus {
-    color: darken($color-accent, 10%);
     outline: none;
+    text-decoration: none;
   }
 }
 
@@ -410,6 +415,7 @@ fieldset {
   select,
   textarea {
     margin: 0 0 1.875rem;
+    outline: none;
   }
 }
 
@@ -422,7 +428,7 @@ legend {
 
 label {
   display: inline-block;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -442,6 +448,7 @@ input,
 select,
 textarea {
   margin: 0 0 1rem;
+  outline: none;
   padding: 10px 20px;
 }
 

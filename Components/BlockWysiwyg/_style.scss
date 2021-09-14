@@ -13,13 +13,13 @@
     align-content: center;
     align-items: center;
     background-color: $color-background;
-    border-bottom: 1px solid $color-border;
+    border-bottom: 0 solid $color-border;
     border-left: 1px solid $color-border;
     border-top: 1px solid $color-border;
     display: flex;
-    height: 5vw;
+    height: calc(5vw - 1px);
     justify-content: flex-start;
-    margin-bottom: 5vw;
+    margin-bottom: 0;
     margin-left: 0;
     padding-left: $container-padding-mobile;
     width: 20vw;

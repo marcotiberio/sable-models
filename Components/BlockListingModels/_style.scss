@@ -1,4 +1,6 @@
 [is='flynt-block-listing-models'] {
+  margin-bottom: 10vw;
+  
   @media (max-width: $breakpoint-tablet-horizontal) {
     margin: 10vw;
   }
@@ -19,7 +21,7 @@
     grid-auto-rows: auto;
     grid-template-columns: repeat(4, 10vw);
     height: 100%;
-    row-gap: 5vw;
+    row-gap: calc(5vw - 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
       column-gap: 20vw;
@@ -58,8 +60,14 @@
           text-decoration: none;
           transition: all 0.2s linear;
 
+          h2 {
+            transition: all 0.2s linear;
+          }
+
           &:hover {
-            opacity: 0.5;
+            h2 {
+              opacity: 0.5;
+            }
           }
 
           @media (max-width: $breakpoint-tablet-horizontal) {
