@@ -54,6 +54,16 @@
         flex-wrap: wrap;
         height: 100%;
 
+        &::before {
+          content: '';
+          display: table;
+        }
+
+        &::after {
+          content: '';
+          display: table;
+        }
+
         &-inner {
           align-items: center;
           background-color: $color-background;
