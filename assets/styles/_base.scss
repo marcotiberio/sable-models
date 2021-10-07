@@ -568,8 +568,8 @@ select {
   margin-top: 5vw;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
-    margin-left: 10vw;
-    margin-top: calc(10vw + 2px);
+    margin-left: 5vw;
+    margin-top: 5vw;
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {

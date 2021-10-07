@@ -4,6 +4,10 @@
   border-top: 0 solid $color-text;
   width: 55vw;
 
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    width: 80vw;
+  }
+
   @media (max-width: $breakpoint-mobile-horizontal) {
     display: none;
   }

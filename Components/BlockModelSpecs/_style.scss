@@ -3,7 +3,7 @@
 
   @media (max-width: $breakpoint-tablet-horizontal) {
     height: 100%;
-    margin: 0;
+    margin-bottom: 10vw;
     width: 40vw;
   }
 
@@ -30,9 +30,10 @@
     width: 20vw;
 
     @media (max-width: $breakpoint-tablet-horizontal) {
+      // border-right: 1px solid $black;
       height: calc(10vw + 0px);
       margin-bottom: 0;
-      width: 40vw;
+      width: 100%;
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
@@ -49,6 +50,14 @@
 
   .figure {
     margin: 0;
+  }
+
+  .container {
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      border-right: 1px solid $black;
+    }
+    
   }
 
   .grid {
@@ -109,6 +118,10 @@
 
     &:hover {
       color: $color-accent;
+    }
+
+    @media (max-width: $breakpoint-tablet-horizontal) {
+      // border-right: 1px solid $black;
     }
   }
 
