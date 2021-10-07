@@ -31,7 +31,7 @@ html {
     background-size: 20vw 20vw;
   }
   @media (max-width: $breakpoint-mobile-horizontal) {
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: 20vw 20vw;
   }
 
