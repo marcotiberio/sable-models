@@ -533,6 +533,18 @@ select {
 * Global layout classes for a consistent appearance.
 */
 
+.mainFooter {
+
+  @media (max-width: $breakpoint-tablet-horizontal) {
+    margin-top: 5vw;
+  }
+
+  @media (max-width: $breakpoint-mobile-horizontal) {
+    margin-top: 10vw;
+  }
+  
+}
+
 .pageWrapper {
   display: flex;
   flex-direction: column;
@@ -582,6 +594,10 @@ select {
 
 .flyntComponent {
   position: relative;
+
+  // &:nth-last-child(1) {
+  //   margin-bottom: 10vw;
+  // }
 }
 
 .componentSpacing {

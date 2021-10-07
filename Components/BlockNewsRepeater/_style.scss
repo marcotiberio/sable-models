@@ -2,7 +2,7 @@
   margin-bottom: 10vw;
 
   @media (max-width: $breakpoint-tablet-horizontal) {
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
     margin-left: 0;
     margin-top: 5vw;
   }
@@ -48,7 +48,7 @@
     width: calc(50vw + 1px);
 
     @media (max-width: $breakpoint-tablet-horizontal) {
-      height: 65vw;
+      height: 60vw;
       margin-right: 0;
       padding-left: 0;
       width: 100vw;

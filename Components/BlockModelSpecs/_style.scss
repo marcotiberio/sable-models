@@ -10,6 +10,7 @@
   @media (max-width: $breakpoint-mobile-horizontal) {
     border-bottom: 0;
     margin-bottom: 0;
+    margin-top: 10vw;
     width: 100vw;
   }
 
@@ -37,10 +38,11 @@
     }
 
     @media (max-width: $breakpoint-mobile-horizontal) {
+      border-right: 1px solid $color-border;
       height: calc(20vw + 0px);
       margin-bottom: 0;
-      margin-left: 20vw;
-      width: 60vw;
+      margin-left: 10vw;
+      width: 80vw;
     }
   }
 
@@ -56,6 +58,10 @@
 
     @media (max-width: $breakpoint-tablet-horizontal) {
       border-right: 1px solid $black;
+    }
+
+    @media (max-width: $breakpoint-mobile-horizontal) {
+      border-right: 0;
     }
     
   }
@@ -78,10 +84,11 @@
     }
   
     @media (max-width: $breakpoint-mobile-horizontal) {
+      border-right: 1px solid $color-border;
       height: calc(60vw + 1px);
       justify-content: space-between;
-      margin-left: 20vw;
-      width: 60vw;
+      margin-left: 10vw;
+      width: 80vw;
     }
   }
 
