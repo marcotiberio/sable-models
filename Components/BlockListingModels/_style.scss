@@ -6,7 +6,7 @@
   }
 
   @media (max-width: $breakpoint-mobile-horizontal) {
-    margin: 20vw;
+    margin: 10vw;
   }
   
   .preContent {
@@ -84,8 +84,9 @@
 
           @media (max-width: $breakpoint-mobile-horizontal) {
             background-color: $color-background;
+            border-right: 1px solid $color-text;
             height: calc(20vw + 0.5px);
-            width: calc(60vw + 0.5px);
+            width: calc(80vw + 0.5px);
           }
 
           .content-title {
@@ -110,7 +111,8 @@
           }
 
           @media (max-width: $breakpoint-mobile-horizontal) {
-            height: calc(80vw + 0.5px);
+            border-right: 1px solid $color-text;
+            height: calc(120vw + 0.5px);
           }
         }
       }
